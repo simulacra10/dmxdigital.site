@@ -1,0 +1,57 @@
+DMX Digital
+Websites with less noise and more signal
+
+I build websites that respect the content.
+
+Simple pages. Clear words. Fast loading. No unnecessary machinery.
+
+
+Why I build this way
+
+A website should not fight the thing it was built to carry. If the words matter, the design should make them easier to find, easier to read, and easier to trust.
+
+That means I start with the content. Then I ask what the page actually needs. Sometimes it needs beauty. Sometimes it needs structure. Sometimes it needs a publishing system. But it does not need complexity simply because complexity is fashionable.
+
+My preference is for durable websites: static when possible, fast by default, plain enough to understand, and flexible enough to grow only when growth is justified.
+
+
+The working rule
+
+Complexity must earn its place.
+
+Content before decoration
+The page should serve the message, not bury it under motion, widgets, and visual noise.
+
+Static before dynamic
+If the site does not need a database, login system, or heavy backend, I do not add one.
+
+Clarity before cleverness
+The best design is often the one that disappears and lets the reader understand what matters.
+
+
+What I build
+
+Plain, durable sites for people with something to say.
+
+I build for writers, ministries, local businesses, campaigns, independent publishers, and people who need a clear home on the web.
+
+- Personal and professional websites
+- Static Hugo sites
+- Decap-backed publishing workflows
+- Article, archive, and resource sites
+- Plain-text friendly content
+- Website refreshes and rebuilds
+
+
+Contact
+
+Need a site that loads fast, reads clearly, and does not get in its own way?
+
+DMX Digital builds content-first websites for people who value substance over spectacle.
+
+Email: norm@dmxdigital.site
+
+
+Footer
+
+DMX Digital. DelMarVa Xcellence in plain, durable web design.

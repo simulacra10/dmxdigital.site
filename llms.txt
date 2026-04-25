@@ -1,0 +1,66 @@
+# DMX Digital
+
+> Websites with less noise and more signal.
+
+DMX Digital builds content-first websites that are simple, fast, durable, and clear.
+
+## Canonical URLs
+
+- Home: https://dmxdigital.site/
+- Plain text: https://dmxdigital.site/plain.txt
+- AI guidance: https://dmxdigital.site/ai.txt
+- LLM guidance: https://dmxdigital.site/llms.txt
+
+## Summary
+
+DMX Digital is a small web studio focused on building websites that respect the content. The studio favors clear words, simple pages, static site architecture, fast loading, and minimal unnecessary machinery.
+
+The guiding principle is:
+
+Complexity must earn its place.
+
+## Philosophy
+
+A website should not fight the thing it was built to carry. If the words matter, the design should make them easier to find, easier to read, and easier to trust.
+
+DMX Digital starts with the content, then asks what the page actually needs. Sometimes a site needs beauty. Sometimes it needs structure. Sometimes it needs a publishing system. But it does not need complexity simply because complexity is fashionable.
+
+## Principles
+
+### Content before decoration
+
+The page should serve the message, not bury it under motion, widgets, and visual noise.
+
+### Static before dynamic
+
+If the site does not need a database, login system, or heavy backend, DMX Digital does not add one.
+
+### Clarity before cleverness
+
+The best design is often the one that disappears and lets the reader understand what matters.
+
+## Services
+
+DMX Digital builds plain, durable sites for people with something to say, including:
+
+- Personal and professional websites
+- Static Hugo sites
+- Decap-backed publishing workflows
+- Article, archive, and resource sites
+- Plain-text friendly content
+- Website refreshes and rebuilds
+
+## Audience
+
+DMX Digital is suited for:
+
+- Writers
+- Ministries
+- Local businesses
+- Campaigns
+- Independent publishers
+- People and organizations that need a clear home on the web
+
+## Contact
+
+Email: norm@dmxdigital.site
