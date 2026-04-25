@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DMX Digital | Websites with Less Noise and More Signal</title>
   <meta name="description" content="DMX Digital builds content-first websites that are simple, fast, durable, and clear.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+  <meta name="theme-color" content="#2b123f">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
   <header>
     <div class="wrap nav">
       <a class="brand" href="/" aria-label="DMX Digital home"><img src="assets/img/dmx-digital-logo.png" alt="DMX Digital"></a>
-
+      
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-
+      
       <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
         <a href="#why">Why</a>
         <a href="#principles">Principles</a>
@@ -27,7 +32,7 @@
       </nav>
     </div>
   </header>
-
+  
   <main>
     <section class="hero">
       <div class="wrap">
@@ -37,21 +42,25 @@
         <div class="hero-line" aria-hidden="true"></div>
       </div>
     </section>
-
+    
     <section id="why">
       <div class="wrap letter">
         <div>
-          <div class="section-kicker">A personal studio note</div>
+          <div class="section-kicker">The Case for Simplicity</div>
           <h2>Why I build this way</h2>
         </div>
         <div class="copy">
+          <blockquote class="quote">
+            <p>“Everything should be made as simple as possible, but not simpler.”</p>
+            <cite>Albert Einstein</cite>
+          </blockquote>
           <p>A website should not fight the thing it was built to carry. If the words matter, the design should make them easier to find, easier to read, and easier to trust.</p>
           <p>That means I start with the content. Then I ask what the page actually needs. Sometimes it needs beauty. Sometimes it needs structure. Sometimes it needs a publishing system. But it does not need complexity simply because complexity is fashionable.</p>
           <p>My preference is for durable websites: static when possible, fast by default, plain enough to understand, and flexible enough to grow only when growth is justified.</p>
         </div>
       </div>
     </section>
-
+    
     <section id="principles">
       <div class="wrap">
         <div class="section-kicker">The working rule</div>
@@ -72,7 +81,7 @@
         </div>
       </div>
     </section>
-
+    
     <section id="work">
       <div class="wrap letter">
         <div>
@@ -92,7 +101,7 @@
         </div>
       </div>
     </section>
-
+    
     <section id="contact">
       <div class="wrap">
         <div class="cta">
@@ -101,13 +110,12 @@
           <p>DMX Digital builds content-first websites for people who value substance over spectacle.</p>
           <div class="button-row">
             <a class="button" href="mailto:norm@dmxdigital.site">Email DMX Digital</a>
-            <a class="button secondary" href="#why">Read the philosophy</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
+  
   <footer>
     <div class="wrap">
       DMX Digital. DelMarVa Xcellence in plain, durable web design.
@@ -116,13 +124,13 @@
   <script>
     const menuToggle = document.querySelector(".menu-toggle");
     const primaryMenu = document.querySelector("#primary-menu");
-
+    
     menuToggle.addEventListener("click", () => {
       const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", String(!isOpen));
       primaryMenu.classList.toggle("is-open");
     });
-
+    
     primaryMenu.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         menuToggle.setAttribute("aria-expanded", "false");
