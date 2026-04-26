@@ -4,8 +4,21 @@ Allow: /
 User-agent: Facebot
 Allow: /
 
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
 User-agent: *
 Allow: /
+
 
 Sitemap: https://dmxdigital.site/sitemap.xml
 AI: https://dmxdigital.site/ai.txt
