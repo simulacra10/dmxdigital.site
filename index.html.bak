@@ -118,7 +118,8 @@
   
   <footer>
     <div class="wrap">
-      DMX Digital. DelMarVa Xcellence in plain, durable web design.
+        <p>DMX Digital. DelMarVa Xcellence in plain, durable web design.</p>
+        <p>&copy; 2026 DMX Digital. All rights reserved.</p>
     </div>
   </footer>
   <script>
