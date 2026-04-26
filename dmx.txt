@@ -1,0 +1,248 @@
+#+TITLE: DMX Digital
+#+SUBTITLE: Websites with less noise and more signal
+#+AUTHOR: Norman Bauer, DBA DMX Digital
+#+DATE: 2026
+#+OPTIONS: toc:nil num:nil
+
+* DMX Digital
+
+Websites with less noise and more signal.
+
+I build websites that respect the content.
+
+Simple pages. Clear words. Fast loading. No unnecessary machinery.
+
+* The Case for Simplicity
+
+#+BEGIN_QUOTE
+“Everything should be made as simple as possible, but not simpler.”
+
+-- Albert Einstein
+#+END_QUOTE
+
+A website should not fight the thing it was built to carry. If the words matter, the design should make them easier to find, easier to read, and easier to trust.
+
+That means I start with the content. Then I ask what the page actually needs. Sometimes it needs beauty. Sometimes it needs structure. Sometimes it needs a publishing system. But it does not need complexity simply because complexity is fashionable.
+
+My preference is for durable websites: static when possible, fast by default, plain enough to understand, and flexible enough to grow only when growth is justified.
+
+* Why I Build This Way
+
+The modern web has become too heavy for its own good.
+
+Too many sites are built as if every project needs a framework, a database, a dashboard, a login system, a marketing funnel, six analytics scripts, and a pile of third-party services just to say something clearly.
+
+Most do not.
+
+For many people, businesses, ministries, writers, and local organizations, the real need is simpler:
+
+- a clear explanation of who they are
+- a trustworthy presentation of what they do
+- a way for people to contact them
+- a place to publish important updates
+- a site that loads quickly and remains understandable over time
+
+That does not require technological bloat. It requires judgment.
+
+DMX Digital exists because I believe the web should be useful before it is impressive. A good website should help the visitor understand. It should reduce friction. It should make the important thing obvious. It should not turn a simple message into a software project unless there is a real reason to do so.
+
+* The Working Rule
+
+Complexity must earn its place.
+
+This does not mean everything should be primitive. It does not mean design is unimportant. It does not mean tools are bad.
+
+It means every layer should justify itself.
+
+If a page needs motion, use motion carefully.
+
+If a site needs a publishing workflow, build one.
+
+If a client needs a content management system, give them one that matches the job.
+
+If a business needs ecommerce, scheduling, forms, or automation, integrate those things deliberately.
+
+But do not add machinery just because the industry expects machinery.
+
+A simple static site that communicates clearly is better than a complicated site that confuses the visitor, breaks often, loads slowly, or becomes difficult to maintain.
+
+* Principles
+
+** Content Before Decoration
+
+The page should serve the message.
+
+Design matters, but decoration is not the foundation. Content is.
+
+Before colors, animations, widgets, and layouts, the essential questions are:
+
+- What needs to be said?
+- Who needs to understand it?
+- What should the visitor do next?
+- What information would make them trust the page?
+- What can be removed without harming the message?
+
+Once those questions are answered, design has something honest to support.
+
+** Static Before Dynamic
+
+If the site does not need a database, login system, or heavy backend, I do not add one.
+
+Static websites are fast, secure, portable, inexpensive to host, and easy to preserve. They are often the correct answer for:
+
+- local business websites
+- ministry websites
+- personal sites
+- campaign sites
+- article archives
+- resource libraries
+- landing pages
+- small publishing projects
+
+Dynamic systems have their place. But they should be chosen because the project needs them, not because they are fashionable.
+
+** Clarity Before Cleverness
+
+The best design is often the one that disappears.
+
+A visitor should not have to decode the page. They should not have to hunt for the phone number, guess what the organization does, or wait for a bloated page to finish loading before they can read.
+
+Cleverness can be useful, but clarity is better.
+
+A simple headline that tells the truth is worth more than a clever slogan that hides the point.
+
+** Durability Before Novelty
+
+Websites should last.
+
+A site should not depend on fragile trends, unnecessary services, or layers of software that nobody understands six months later.
+
+Durability means:
+
+- plain files where possible
+- readable source code
+- minimal dependencies
+- clean structure
+- predictable hosting
+- content that can be exported, archived, and reused
+
+A website should not become a trap. The owner should be able to understand what they have.
+
+** Workflow Before Features
+
+The best website is not always the one with the most features.
+
+It is the one the owner can actually use.
+
+A publishing workflow should fit the person maintaining the site. For some people, that means a simple content management screen. For others, it means Markdown files, Git, plain text, or a lightweight static site generator.
+
+The workflow serves the work. The work does not serve the workflow.
+
+* What I Build
+
+Plain, durable sites for people with something to say.
+
+I build for writers, ministries, local businesses, campaigns, independent publishers, and people who need a clear home on the web.
+
+** Common Projects
+
+- Personal and professional websites
+- Static Hugo sites
+- Decap-backed publishing workflows
+- Article, archive, and resource sites
+- Plain-text friendly content
+- Website refreshes and rebuilds
+- Small business landing pages
+- Ministry and nonprofit sites
+- Campaign and issue sites
+- Simple publishing systems
+
+** What I Try to Avoid
+
+- unnecessary databases
+- fragile plugin stacks
+- bloated page builders
+- decorative complexity
+- mystery-box platforms
+- designs that look good but say little
+- systems the client cannot understand or maintain
+
+* What a Good Website Should Do
+
+A good website should answer basic questions quickly.
+
+- Who are you?
+- What do you do?
+- Where are you?
+- Who do you serve?
+- Why should someone trust you?
+- How can someone contact you?
+- What should the visitor do next?
+
+If the site cannot answer those questions, more decoration will not fix it.
+
+* Local, Plain, and Useful
+
+DMX stands for DelMarVa Xcellence.
+
+That matters because this is not an abstract tech brand trying to sound bigger than it is.
+
+It is a practical web studio rooted in a local way of working: direct, useful, honest, and built around real needs.
+
+The goal is not to impress other designers.
+
+The goal is to build websites that help people communicate clearly.
+
+* AI-Friendly by Design
+
+The web is changing.
+
+More people will encounter websites through search snippets, social previews, AI summaries, feeds, and machine-readable indexes before they ever see the full page.
+
+That means content structure matters more, not less.
+
+A site should be readable by humans and understandable by machines. That includes:
+
+- clear headings
+- useful metadata
+- Open Graph tags
+- sitemap.xml
+- robots.txt
+- ai.txt
+- llms.txt
+- plain text versions where appropriate
+- simple, semantic HTML
+
+Style still matters. But machines do not admire your animation. They parse your structure.
+
+If the content matters, make it available in forms that can be read, cited, shared, indexed, and preserved.
+
+* The Plain Text Bias
+
+Plain text is not nostalgia.
+
+Plain text is control.
+
+It is portable, searchable, durable, scriptable, and easy to preserve. It survives changes in software. It can be read almost anywhere. It keeps the work close to the author.
+
+That does not mean every website should look plain. It means the underlying content should remain accessible and understandable without depending on a fragile presentation layer.
+
+The content comes first.
+
+Then the design.
+
+Then the tools.
+
+* Start Simple
+
+Need a site that loads fast, reads clearly, and does not get in its own way?
+
+DMX Digital builds content-first websites for people who value substance over spectacle.
+
+Email: norm@dmxdigital.site
+
+* Footer
+
+DMX Digital. DelMarVa Xcellence in plain, durable web design.
+
+Copyright 2026 DMX Digital. All rights reserved.

@@ -5,8 +5,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://dmxdigital.site/dmx.txt</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://dmxdigital.site/plain.txt</loc>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://dmxdigital.site/ai.txt</loc>
