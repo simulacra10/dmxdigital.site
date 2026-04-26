@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dmxdigital.site/sitemap.xml
+AI: https://dmxdigital.site/ai.txt
+LLMS: https://dmxdigital.site/llms.txt
+
+# Keep out
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
