@@ -45,6 +45,7 @@
       </button>
       
       <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
+        <a href="https://youtu.be/hXIeKjRG4XQ">Video Introduction</a>
         <a href="#why">Why</a>
         <a href="#principles">Principles</a>
         <a href="#work">Work</a>
