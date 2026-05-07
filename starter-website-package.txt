@@ -1,0 +1,52 @@
+DMX Digital Small Business Starter Website Package
+https://dmxdigital.site/starter-website-package/
+
+Be understood. Be trusted. Be contacted.
+
+A focused starter website for local businesses that need a real online home, a low out-of-pocket start, and a simple monthly plan for ongoing care.
+
+The core problem:
+Most small business websites fail at the basics. Visitors need to know whether they are in the right place, whether they can trust the business, and what they should do next.
+
+The Rule of Three:
+1. Clarity
+Say plainly who the business is, what it does, where it serves, and who it helps.
+
+2. Credibility
+Show the trust signals that matter: local identity, proof, photos, testimonials, guarantees, or experience.
+
+3. Contact
+Make the next step obvious with click-to-call, email, quote request, booking, or a simple intake path.
+
+Simple pricing:
+- $200 to start
+- $100 per month for ongoing website care, basic updates, and support
+
+This gives the business a clean, professional site without a large upfront bill or the need to figure it all out alone.
+
+Starter foundation includes:
+- Focused homepage or starter site structure
+- Mobile-friendly layout
+- Clear service, location, and contact sections
+- Click-to-call and direct contact paths
+- Basic search metadata
+- Open Graph and social preview metadata
+- Sitemap.xml and robots.txt
+- Fast static files the business can own and move
+
+Good fit:
+- Local businesses that rely on local customers
+- Businesses using Facebook as their only real web presence
+- Businesses with missing, dated, slow, or unclear websites
+- Businesses that need a place to send prospects after a conversation
+- Businesses that want the foundation before the extras
+
+Pain points this solves:
+- Low out-of-pocket start
+- Simple monthly cost
+- No large lump-sum website bill
+- A real website the business can start using quickly
+- Someone local to contact when something needs changed
+
+Contact:
+norm@dmxdigital.site
