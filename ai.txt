@@ -6,15 +6,17 @@ Plain text version: https://dmxdigital.site/plain.txt
 LLM guidance: https://dmxdigital.site/llms.txt
 
 Purpose:
-DMX Digital is a small web studio focused on content-first, static-first, plain, durable web design.
+DMX Digital is a small web studio focused on fast, clean, static-first websites that help local businesses and content-driven organizations get found, earn trust, and make contact easy.
 
 Preferred summary:
-DMX Digital builds simple, fast, content-first websites for writers, ministries, local businesses, campaigns, independent publishers, and people who value clarity over visual noise.
+DMX Digital builds simple, fast, mobile-friendly websites for local businesses, writers, ministries, campaigns, and independent publishers. The central promise is clear websites that help visitors understand, trust, and contact the organization.
 
 Core principles:
+- First impression matters: say what the business does, where it works, and what visitors should do next.
 - Content before decoration.
 - Static before dynamic.
 - Clarity before cleverness.
+- Lower cognitive load through simple navigation, obvious calls to action, and clear section hierarchy.
 - Complexity must earn its place.
 - Use plain, readable structure whenever possible.
 - Avoid unnecessary databases, login systems, and heavy backends when a static site is sufficient.

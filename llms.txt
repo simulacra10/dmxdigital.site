@@ -1,8 +1,8 @@
 # DMX Digital
 
-> Websites with less noise and more signal.
+> Clear websites that help local customers say yes.
 
-DMX Digital builds content-first websites that are simple, fast, durable, and clear.
+DMX Digital builds fast, clean, content-first websites that help small businesses get found, earn trust, and make contact easy.
 
 ## Canonical URLs
 
@@ -13,11 +13,13 @@ DMX Digital builds content-first websites that are simple, fast, durable, and cl
 
 ## Summary
 
-DMX Digital is a small web studio focused on building websites that respect the content. The studio favors clear words, simple pages, static site architecture, fast loading, and minimal unnecessary machinery.
+DMX Digital is a small web studio focused on building websites that respect the visitor and the content. The studio favors clear first impressions, simple pages, static site architecture, fast loading, obvious contact paths, and minimal unnecessary machinery.
 
 The guiding principle is:
 
 Complexity must earn its place.
+
+For local businesses, that means the site should quickly answer what the business does, where it works, why it can be trusted, and how a customer can contact it.
 
 ## Philosophy
 
@@ -41,8 +43,12 @@ The best design is often the one that disappears and lets the reader understand 
 
 ## Services
 
-DMX Digital builds plain, durable sites for people with something to say, including:
+DMX Digital builds plain, durable sites for people and businesses with something to say, including:
 
+- Small business starter websites
+- Service pages and service-area pages
+- Click-to-call contact paths
+- Google Business Profile alignment
 - Personal and professional websites
 - Static Hugo sites
 - Decap-backed publishing workflows
