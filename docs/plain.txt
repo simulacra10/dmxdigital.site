@@ -1,0 +1,167 @@
+#+TITLE: DMX Digital
+#+SUBTITLE: Fast, clean websites for small businesses
+#+AUTHOR: Norman Bauer, DBA DMX Digital
+#+DATE: 2026
+#+OPTIONS: toc:nil num:nil
+
+* DMX Digital
+
+Clear websites that help local customers say yes.
+
+Fast, clean websites for small businesses that need to be found and trusted.
+
+Most customers look you up before they call. DMX Digital builds simple, mobile-friendly websites that make your business clear, credible, and easy to contact.
+
+Core qualities:
+
+- fast loading
+- mobile friendly
+- search ready
+- easy to own
+
+* Why Your Website Matters
+
+People research before they reach out.
+
+Normal customers rarely call a business blindly. They look for proof. They check the name, the service area, photos, reviews, and whether the business looks real enough to trust.
+
+If all they find is a Facebook page, an old listing, or nothing useful at all, doubt enters before the conversation begins. A clear website gives them the confidence to take the next step.
+
+A good local business website should quickly answer:
+
+- What do you do?
+- Where do you work?
+- How can someone contact you?
+- Why should someone trust you?
+
+* Starter Website Package
+
+A practical first website for local businesses.
+
+The Starter Website Package is a simple, professional web presence for businesses that need to look real, trustworthy, and easy to contact without taking on a bloated website project.
+
+Built to cover the basics well:
+
+- clean homepage or starter site structure
+- mobile-friendly design
+- service, location, and contact sections
+- click-to-call and direct contact paths
+- search and social preview metadata
+- sitemap.xml and robots.txt
+- ai.txt and llms.txt
+- fast static files with no unnecessary plugin stack
+
+Package page:
+https://dmxdigital.site/starter-website-package/
+
+* What Makes DMX Different
+
+Less noise. More trust. More calls.
+
+** First Impression
+
+The top of the page should immediately tell visitors what you do, where you serve, and what they should do next.
+
+** Lower Friction
+
+Clear words, simple navigation, generous spacing, and obvious contact paths reduce confusion and make the business easier to trust.
+
+** Careful Details
+
+Fast loading, clean mobile behavior, useful metadata, and small interface polish signal that the business is cared for.
+
+* The Case for Simplicity
+
+#+BEGIN_QUOTE
+“Everything should be made as simple as possible, but not simpler.”
+
+-- Albert Einstein
+#+END_QUOTE
+
+A website should not fight the thing it was built to carry. If the words matter, the design should make them easier to find, easier to read, and easier to trust.
+
+That means I start with the content. Then I ask what the page actually needs. Sometimes it needs beauty. Sometimes it needs structure. Sometimes it needs a publishing system. But it does not need complexity simply because complexity is fashionable.
+
+My preference is for durable websites: static when possible, fast by default, plain enough to understand, and flexible enough to grow only when growth is justified.
+
+* Principles
+
+** Content Before Decoration
+
+The page should serve the message, not bury it under motion, widgets, and visual noise.
+
+** Static Before Dynamic
+
+If the site does not need a database, login system, or heavy backend, I do not add one.
+
+** Clarity Before Cleverness
+
+The best design is often the one that disappears and lets the visitor understand what matters.
+
+** Durability Before Novelty
+
+Websites should last. A site should not depend on fragile trends, unnecessary services, or layers of software that nobody understands six months later.
+
+** Workflow Before Features
+
+The best website is not always the one with the most features. It is the one the owner can actually use.
+
+* What I Build
+
+Plain, durable sites for businesses and people with something to say.
+
+I build for local businesses, writers, ministries, campaigns, independent publishers, and people who need a clear home on the web.
+
+** For Local Businesses
+
+- starter websites
+- service pages
+- click-to-call contact paths
+- Google Business Profile alignment
+- service-area pages
+
+** For Publishers and Organizations
+
+- static Hugo sites
+- Decap-backed publishing workflows
+- article and archive sites
+- plain-text friendly content
+- website refreshes and rebuilds
+
+* AI-Friendly by Design
+
+The web is changing.
+
+More people will encounter websites through search snippets, social previews, AI summaries, feeds, and machine-readable indexes before they ever see the full page.
+
+That means content structure matters more, not less.
+
+A site should be readable by humans and understandable by machines. That includes:
+
+- clear headings
+- useful metadata
+- Open Graph tags
+- sitemap.xml
+- robots.txt
+- ai.txt
+- llms.txt
+- plain text versions where appropriate
+- simple, semantic HTML
+
+Style still matters. But machines do not admire your animation. They parse your structure.
+
+If the content matters, make it available in forms that can be read, cited, shared, indexed, and preserved.
+
+* Start Simple
+
+Need a clean website before customers search for you and find nothing?
+
+Send your business name, service area, and what you offer. I will help you turn it into a simple website that makes you easier to trust and easier to contact.
+
+Email: norm@dmxdigital.site
+
+* Footer
+
+DMX Digital. DelMarVa Xcellence in plain, durable web design.
+
+Copyright 2026 DMX Digital. All rights reserved.
