@@ -557,3 +557,6 @@ footer {
     max-height: none;
   }
 }
+
+/* About page — headshot displays at natural portrait ratio */
+.about-hero .hero-visual img { max-height: none; }

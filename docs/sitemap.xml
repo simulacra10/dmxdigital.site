@@ -9,6 +9,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dmxdigital.site/about/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dmxdigital.site/about.txt</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://dmxdigital.site/starter-website-package.txt</loc>
     <priority>0.4</priority>
   </url>

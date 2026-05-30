@@ -1,0 +1,82 @@
+#+TITLE: About Norman Bauer
+#+SUBTITLE: DMX Digital
+#+AUTHOR: Norman Bauer, DBA DMX Digital
+#+DATE: 2026
+#+OPTIONS: toc:nil num:nil
+
+* About Norman Bauer
+
+DMX Digital
+https://dmxdigital.site/about/
+
+I am an information systems person, not a designer who learned to code.
+
+* Background
+
+Twelve years in IS. Nearly a decade fixing things other people would not touch.
+
+I spent 12 years in IS and MIS before my employer outsourced my job. The focus was
+never the technology. It was the information. I have always believed that if a 3x5
+index card and a pencil is the best solution, that is the one you implement.
+
+After a year off I started Wye Oak Mobile Device Repair from my dining room table. It
+was supposed to be a mobile device repair shop. It turned into something closer to
+"Yup, I fix that too." I ran it out of the Amish Market in Easton for nearly a decade.
+Microsoldering iPhone boards, migrating data off legacy systems, repairing CMM machines
+running FreeDOS, troubleshooting 25-year-old computers, replacing CCFL bulbs in custom
+HMI displays. The work that made other technicians uncomfortable was usually the work I
+found most interesting. I sold the business in 2025.
+
+* What the Shop Taught Me
+
+Customers do not care about technology.
+
+Running a real local business taught me things most web designers never learn. Customers
+do not care about technology. They care about whether you show up, whether you are
+honest, and whether the thing works when you hand it back. They also want to know who
+they are dealing with. Many of my Wye Oak customers became friends I still keep in
+touch with today. That is not something I planned. It is just what happens when you
+treat people like people.
+
+* How I Work
+
+Listen until you actually understand.
+
+A client named Mike came to me on a referral. He had already talked to five people and
+one large agency about his website. Nobody had impressed him. I spent an hour and a
+half asking him questions, then stopped and said: "Let me summarize what you just told
+me. Correct me if I got anything wrong." He looked at me and said none of the others
+had done that. He hired me on the spot.
+
+That is the job. Not the code. Not the platform. Listening until you actually
+understand, then building something that reflects what the business owner is trying
+to say.
+
+* Now
+
+Based on the Eastern Shore of Maryland.
+
+I am based on the Eastern Shore of Maryland. I also publish Your Good News, a community
+news and directory project focused on Easton and Talbot County. If you want a website
+built by someone who listens, has actually run a local business, and will not hand you
+something fragile and confusing to maintain, that is what I do.
+
+#+BEGIN_QUOTE
+"A good name is more desirable than great riches; to be esteemed is better than
+silver or gold."
+
+-- Proverbs 22:1
+#+END_QUOTE
+
+* Contact
+
+norm@dmxdigital.site
+Easton, Maryland
+
+https://dmxdigital.site/about/
+
+* Footer
+
+DMX Digital. DelMarVa Xcellence in plain, durable web design.
+
+Copyright 2026 DMX Digital. All rights reserved.
