@@ -560,3 +560,24 @@ footer {
 
 /* About page — headshot displays at natural portrait ratio */
 .about-hero .hero-visual img { max-height: none; }
+
+/* Speed test tool preview image */
+.tool-preview-link {
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1.4rem 3rem rgba(43, 18, 63, 0.14);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tool-preview-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1.7rem 3.5rem rgba(43, 18, 63, 0.2);
+}
+
+.tool-preview-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
