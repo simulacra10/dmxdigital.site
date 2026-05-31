@@ -561,6 +561,128 @@ footer {
 /* About page — headshot displays at natural portrait ratio */
 .about-hero .hero-visual img { max-height: none; }
 
+/* Site comparison component */
+.site-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  padding: 1.35rem 1.5rem;
+  box-shadow: 0 1.4rem 3rem rgba(43, 18, 63, 0.07);
+}
+
+.comparison-card__label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.comparison-card__domain {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--deep-purple);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.comparison-card__desc {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.comparison-metrics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.comparison-metrics li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
+}
+
+.metric-label {
+  grid-row: 1 / 3;
+  align-self: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.metric-value {
+  grid-column: 2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.metric-bar {
+  grid-column: 2;
+  display: block;
+  height: 0.25rem;
+  background: rgba(43, 18, 63, 0.07);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.metric-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.comparison-card--simple .metric-bar span { background: #6a9b74; }
+.comparison-card--complex .metric-bar span { background: #c08838; }
+
+.comparison-card__note {
+  margin: 1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.comparison-callout {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0.9rem 1.2rem;
+  background: rgba(111, 58, 168, 0.06);
+  border-left: 0.25rem solid rgba(111, 58, 168, 0.32);
+  border-radius: 0 0.75rem 0.75rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  color: #45364f;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .site-comparison { grid-template-columns: 1fr; }
+  .comparison-callout { grid-column: 1; }
+}
+
 /* Speed test tool preview image */
 .tool-preview-link {
   display: block;
