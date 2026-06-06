@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Emacs Config | DMX Digital</title>
+  <meta name="description" content="Norman Bauer's personal Emacs init file and config. Emacs Lisp. Monokai theme. Free to use or adapt.">
+  <meta name="author" content="Norman Bauer, DBA DMX Digital">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dmxdigital.site/projects/emacs/">
+  <meta property="og:title" content="Emacs Config | DMX Digital">
+  <meta property="og:description" content="Personal Emacs init file and config. Emacs Lisp. Monokai theme. Free to use or adapt.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dmxdigital.site/projects/emacs/">
+  <meta property="og:site_name" content="DMX Digital">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://dmxdigital.site/assets/img/og-image.png">
+  <meta property="og:image:alt" content="DMX Digital logo and brand message">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emacs Config | DMX Digital">
+  <meta name="twitter:description" content="Personal Emacs init file and config. Emacs Lisp. Monokai theme. Free to use or adapt.">
+  <meta name="twitter:image" content="https://dmxdigital.site/assets/img/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+  <meta name="theme-color" content="#2b123f">
+  <link rel="stylesheet" href="/assets/css/site.min.css?v=20260606-projects">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="DMX Digital home">
+        <img src="/assets/img/dmx-digital-logo.png" alt="DMX Digital">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span> <span></span> <span></span>
+      </button>
+      <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="https://speed.dmxdigital.site" target="_blank" rel="noopener noreferrer">Speed Test</a>
+        <a href="/dmx.txt">Plain Text</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero premium-hero">
+      <div class="wrap">
+        <div class="eyebrow"><a href="/projects/" style="color:inherit;text-decoration:none;">&larr; Projects</a></div>
+        <h1>Emacs Config</h1>
+        <p>This is my Emacs config. It works for me. Feel free to use or adapt it.</p>
+      </div>
+    </section>
+
+    <section id="about-config">
+      <div class="wrap letter">
+        <div>
+          <div class="section-kicker">What it is</div>
+          <h2>A working init file, not a polished distribution.</h2>
+        </div>
+        <div class="copy">
+          <p>This is my personal Emacs init file and supporting config files, written in Emacs Lisp. It includes a Monokai theme and has been refined over time to fit the way I actually work.</p>
+          <p>It is not a curated starter kit or a distribution. It is just the config I use. If you are an Emacs user looking for a reference or a starting point for your own init file, you are welcome to it.</p>
+          <div class="button-row">
+            <a class="button" href="https://github.com/simulacra10/emacs" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a class="button secondary" style="background:transparent;color:var(--deep-purple);border:1px solid var(--line);" href="/projects/">All Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="compact-section">
+      <div class="wrap">
+        <div class="section-kicker">Details</div>
+        <h2>What is in it.</h2>
+        <div class="principles" style="margin-top:2rem;">
+          <article class="card">
+            <h3>Emacs Lisp</h3>
+            <p>The entire config is plain Emacs Lisp. No literate config, no org-babel tangling. Just a straightforward init file.</p>
+          </article>
+          <article class="card">
+            <h3>Monokai theme</h3>
+            <p>Includes a Monokai color theme. Dark background, saturated syntax highlighting. The classic.</p>
+          </article>
+          <article class="card">
+            <h3>Open source</h3>
+            <p>On GitHub at <a href="https://github.com/simulacra10/emacs" target="_blank" rel="noopener noreferrer">simulacra10/emacs</a>. Clone it, fork it, or pick through it for whatever is useful.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>DMX Digital. DelMarVa Xcellence in plain, durable web design.</p>
+      <p>&copy; 2026 DMX Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle"),
+          primaryMenu = document.querySelector("#primary-menu");
+    menuToggle.addEventListener("click", () => {
+      const e = "true" === menuToggle.getAttribute("aria-expanded");
+      menuToggle.setAttribute("aria-expanded", String(!e));
+      primaryMenu.classList.toggle("is-open");
+    });
+    primaryMenu.querySelectorAll("a").forEach(e => {
+      e.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        primaryMenu.classList.remove("is-open");
+      });
+    });
+  </script>
+</body>
+</html>
