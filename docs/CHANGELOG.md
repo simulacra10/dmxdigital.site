@@ -4,6 +4,13 @@ All notable changes to dmxdigital.site are recorded here.
 
 ---
 
+## 2026-06-09
+
+### Changed
+- Phone number `(410) 934-7599` commented out in contact sections on homepage, about, and projects pages; contact line now shows email and location only
+
+---
+
 ## 2026-06-06
 
 ### Added
