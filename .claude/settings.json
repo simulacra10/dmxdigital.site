@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bash /home/norm/src/dmxdigital.site/minify-site.sh)"
+      "Bash(bash /home/norm/src/dmxdigital.site/minify-site.sh)",
+      "Bash(git -C /home/norm/src/dmxdigital.site log --oneline -3)",
+      "Bash(git -C /home/norm/src/dmxdigital.site add deploy.sh .claude/settings.json .gitignore)",
+      "Bash(git -C /home/norm/src/dmxdigital.site commit -m ' *)"
     ]
   }
 }
