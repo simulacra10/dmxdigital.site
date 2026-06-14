@@ -556,5 +556,54 @@
           });
         }));
     </script>
+    <script>
+      if (document.modelContext) {
+        const controller = new AbortController();
+        const opts = { signal: controller.signal };
+
+        document.modelContext.registerTool({
+          name: "get-site-info",
+          title: "Get Site Info",
+          description: "Returns key information about DMX Digital — name, tagline, services summary, and contact details.",
+          inputSchema: { type: "object", properties: {} },
+          annotations: { readOnlyHint: true },
+          execute: async () => ({
+            name: "DMX Digital",
+            tagline: "Fast, clean websites for small businesses",
+            owner: "Norm Bauer",
+            location: "Baltimore, MD",
+            email: "norm@dmxdigital.site",
+            website: "https://dmxdigital.site"
+          })
+        }, opts);
+
+        document.modelContext.registerTool({
+          name: "get-services",
+          title: "Get Services",
+          description: "Returns a list of web development services offered by DMX Digital.",
+          inputSchema: { type: "object", properties: {} },
+          annotations: { readOnlyHint: true },
+          execute: async () => ({
+            services: [
+              { name: "Starter Website Package", description: "Fast, lightweight static websites for small businesses. No WordPress, no bloat." },
+              { name: "Web Performance", description: "Core Web Vitals audits and improvements for load time and Lighthouse scores." },
+              { name: "Custom Web Development", description: "Bespoke frontend and full-stack projects." }
+            ]
+          })
+        }, opts);
+
+        document.modelContext.registerTool({
+          name: "get-contact",
+          title: "Get Contact Info",
+          description: "Returns contact information for DMX Digital.",
+          inputSchema: { type: "object", properties: {} },
+          annotations: { readOnlyHint: true },
+          execute: async () => ({
+            email: "norm@dmxdigital.site",
+            website: "https://dmxdigital.site"
+          })
+        }, opts);
+      }
+    </script>
   </body>
 </html>

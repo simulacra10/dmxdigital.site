@@ -1,0 +1,19 @@
+{
+  "name": "site.dmxdigital",
+  "title": "DMX Digital",
+  "description": "DMX Digital — freelance web development and digital services by Norm Bauer.",
+  "version": "1.0.0",
+  "websiteUrl": "https://dmxdigital.site",
+  "serverInfo": {
+    "name": "dmxdigital.site",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "endpoint": "https://dmxdigital.site/mcp"
+  },
+  "capabilities": {
+    "tools": [],
+    "resources": [],
+    "prompts": []
+  }
+}

@@ -4,6 +4,20 @@ All notable changes to dmxdigital.site are recorded here.
 
 ---
 
+## 2026-06-14
+
+### Added
+
+- `auth.md` — agent registration manifest declaring anonymous public access
+- `/.well-known/oauth-protected-resource` — RFC 9728 protected resource metadata
+- `/.well-known/oauth-authorization-server` — OAuth AS metadata with `agent_auth` block
+- `/.well-known/mcp/server-card.json` — MCP Server Card (SEP-1649) for agent discovery
+- `/.well-known/agent-skills/index.json` — Agent Skills Discovery index (RFC v0.2.0)
+- `/.well-known/agent-skills/dmxdigital-services/SKILL.md` — skill describing DMX Digital services
+- WebMCP tools in `index.html` via `document.modelContext.registerTool()`: `get-site-info`, `get-services`, `get-contact`
+
+---
+
 ## 2026-06-13
 
 ### Added

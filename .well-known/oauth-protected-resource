@@ -1,0 +1,6 @@
+{
+  "resource": "https://dmxdigital.site",
+  "authorization_servers": ["https://dmxdigital.site"],
+  "scopes_supported": [],
+  "bearer_methods_supported": ["header"]
+}
