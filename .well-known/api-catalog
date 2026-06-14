@@ -1,0 +1,31 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://dmxdigital.site/.well-known/api-catalog",
+      "item": [
+        { "href": "https://dmxdigital.site" }
+      ]
+    },
+    {
+      "anchor": "https://dmxdigital.site",
+      "service-desc": [
+        {
+          "href": "https://dmxdigital.site/llms.txt",
+          "type": "text/plain"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://dmxdigital.site/",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://dmxdigital.site/",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

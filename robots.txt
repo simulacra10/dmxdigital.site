@@ -23,6 +23,7 @@ Allow: /
 Sitemap: https://dmxdigital.site/sitemap.xml
 AI: https://dmxdigital.site/ai.txt
 LLMS: https://dmxdigital.site/llms.txt
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 # Keep out
 Disallow: /admin/
