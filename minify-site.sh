@@ -76,6 +76,9 @@ if [[ -f "$PUBLIC_DIR/$CSS_MIN" && -f "$PUBLIC_DIR/$CSS_IN" ]]; then
   rm "$PUBLIC_DIR/$CSS_IN"
 fi
 
+echo "Syncing minified CSS back to source tree ..."
+cp "$PUBLIC_DIR/$CSS_MIN" "$CSS_MIN"
+
 echo "Done."
 echo "Published minified site to: $PUBLIC_DIR/"
 echo
