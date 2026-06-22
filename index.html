@@ -84,17 +84,29 @@
           <span></span> <span></span> <span></span>
         </button>
         <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
-          <a href="https://youtu.be/hXIeKjRG4XQ">Video Introduction</a>
-          <a href="#starter">Starter Website</a>
-          <a href="#difference">Difference</a> <a href="/about/">About</a>
-          <a href="/projects/">Projects</a>
-          <a
-            href="https://speed.dmxdigital.site"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Speed Test</a
-          >
-          <a href="dmx.txt">Plain Text</a> <a href="#contact">Contact</a>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Work</button>
+            <ul class="nav-group-menu">
+              <li><a href="#starter">Starter Website</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="https://speed.dmxdigital.site" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">About</button>
+            <ul class="nav-group-menu">
+              <li><a href="/about/">About</a></li>
+              <li><a href="https://youtu.be/hXIeKjRG4XQ" target="_blank" rel="noopener noreferrer">Video Introduction</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Writing</button>
+            <ul class="nav-group-menu">
+              <li><a href="/built-to-be-found-built-to-be-defended/">Built to Be Found</a></li>
+              <li><a href="dmx.txt">Plain Text</a></li>
+            </ul>
+          </div>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -143,6 +155,25 @@
                 <span>Fast loading</span> <span>Mobile friendly</span>
                 <span>Search ready</span> <span>Easy to own</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="built-to-be-found" class="compact-section">
+        <div class="wrap letter">
+          <div>
+            <div class="section-kicker">DMX Digital Thinking</div>
+            <h2>Built to Be Found. Built to Be Defended.</h2>
+          </div>
+          <div class="copy">
+            <p>
+              Being visible on the open web means automated scanners and bots will find you too. That is not a sign something went wrong. It is the background noise of the modern internet.
+            </p>
+            <p>
+              A recent scan of <a href="https://www.yourgood.news" target="_blank" rel="noopener noreferrer">Your Good News</a> sent more than 5,000 probes looking for WordPress logins, PHP vulnerabilities, and exposed APIs the site does not run. Every probe came up empty. Here is what made that possible—and what it means for your website.
+            </p>
+            <div class="button-row">
+              <a class="button" href="/built-to-be-found-built-to-be-defended/">Read the full piece</a>
             </div>
           </div>
         </div>
@@ -544,17 +575,26 @@
     <script>
       const menuToggle = document.querySelector(".menu-toggle"),
         primaryMenu = document.querySelector("#primary-menu");
-      (menuToggle.addEventListener("click", () => {
+      menuToggle.addEventListener("click", () => {
         const e = "true" === menuToggle.getAttribute("aria-expanded");
-        (menuToggle.setAttribute("aria-expanded", String(!e)),
-          primaryMenu.classList.toggle("is-open"));
-      }),
-        primaryMenu.querySelectorAll("a").forEach((e) => {
-          e.addEventListener("click", () => {
-            (menuToggle.setAttribute("aria-expanded", "false"),
-              primaryMenu.classList.remove("is-open"));
-          });
-        }));
+        menuToggle.setAttribute("aria-expanded", String(!e));
+        primaryMenu.classList.toggle("is-open");
+      });
+      primaryMenu.querySelectorAll("a").forEach((e) => {
+        e.addEventListener("click", () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          primaryMenu.classList.remove("is-open");
+        });
+      });
+      primaryMenu.querySelectorAll(".nav-group").forEach((group) => {
+        const btn = group.querySelector(".nav-group-btn");
+        group.addEventListener("mouseenter", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("mouseleave", () => btn.setAttribute("aria-expanded", "false"));
+        group.addEventListener("focusin", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("focusout", (e) => {
+          if (!group.contains(e.relatedTarget)) btn.setAttribute("aria-expanded", "false");
+        });
+      });
     </script>
     <script>
       if (document.modelContext) {

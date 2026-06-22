@@ -80,6 +80,7 @@ header {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -719,4 +720,239 @@ footer {
   font-size: 0.88rem;
   color: var(--muted);
   margin: 0.3rem 0 1.5rem;
+}
+
+/* ── Nav dropdowns (mobile-first) ────────────────────────────── */
+
+/* Shared button reset */
+.nav-group-btn {
+  all: unset;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  color: var(--deep-purple);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.7rem;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+
+.nav-group-btn:hover {
+  background: rgba(201, 167, 255, 0.22);
+}
+
+/* Mobile: groups stack, menus always visible and indented */
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.nav-group-menu {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.5rem 0.95rem;
+}
+
+.nav-group-menu a {
+  display: block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.45rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.88rem;
+  transition: background 0.15s ease;
+}
+
+.nav-group-menu a:hover {
+  background: rgba(201, 167, 255, 0.22);
+  color: var(--deep-purple);
+}
+
+/* Desktop: groups inline, menus hidden until hover/focus */
+@media (min-width: 761px) {
+  .nav-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-group-btn {
+    width: auto;
+    padding: 0;
+    color: var(--muted);
+    border-radius: 0;
+  }
+
+  .nav-group-btn::after {
+    content: '';
+    display: inline-block;
+    width: 0.36em;
+    height: 0.36em;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-0.12em);
+    transition: transform 0.18s ease;
+  }
+
+  .nav-group:hover .nav-group-btn,
+  .nav-group:focus-within .nav-group-btn {
+    color: var(--deep-purple);
+  }
+
+  .nav-group:hover .nav-group-btn::after,
+  .nav-group:focus-within .nav-group-btn::after {
+    transform: rotate(-135deg) translateY(0.12em);
+  }
+
+  .nav-group-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.35rem;
+    min-width: 11rem;
+    white-space: nowrap;
+    background: rgba(255, 248, 239, 0.98);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(43, 18, 63, 0.12);
+    backdrop-filter: blur(10px);
+    z-index: 20;
+  }
+
+  .nav-group:hover .nav-group-menu,
+  .nav-group:focus-within .nav-group-menu {
+    display: block;
+    animation: navFadeIn 0.14s ease;
+  }
+
+  @keyframes navFadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(-5px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  .nav-group-menu a {
+    padding: 0.55rem 0.8rem;
+    color: var(--deep-purple);
+    font-size: 0.9rem;
+  }
+}
+
+/* ── Article / blog post layout ─────────────────────────────── */
+
+.article-header {
+  padding: clamp(1.75rem, 4vw, 2.75rem) 0 clamp(1.25rem, 3vw, 2rem);
+}
+
+.article-header .wrap {
+  max-width: min(68ch, calc(100% - 2rem));
+}
+
+.article-header h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin-top: 0.6rem;
+  letter-spacing: -0.03em;
+}
+
+.article-byline {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.article-lede {
+  max-width: 56ch;
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  color: var(--muted);
+  margin: 0.85rem 0 0;
+  line-height: 1.55;
+}
+
+article.prose {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+
+article.prose .wrap {
+  max-width: min(68ch, calc(100% - 2rem));
+}
+
+article.prose p,
+article.prose li {
+  font-size: clamp(1.08rem, 1.6vw, 1.22rem);
+  line-height: 1.78;
+}
+
+article.prose p {
+  margin: 1.35rem 0 0;
+}
+
+article.prose p:first-child {
+  margin-top: 0;
+}
+
+article.prose h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  margin: 2.5rem 0 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+article.prose ul {
+  border-left: 3px solid var(--orange);
+  list-style: none;
+  padding-left: 1.25rem;
+  margin: 1rem 0 0;
+}
+
+article.prose li {
+  margin: 0.4rem 0;
+}
+
+article.prose hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
+
+article.prose em {
+  color: var(--muted);
+}
+
+.article-figure {
+  margin: 0;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0;
+  border-top: 1px solid var(--line);
+}
+
+.article-figure .wrap {
+  max-width: min(68ch, calc(100% - 2rem));
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+
+.article-figure figcaption {
+  margin-top: 0.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
 }
