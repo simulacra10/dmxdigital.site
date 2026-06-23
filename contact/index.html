@@ -126,7 +126,10 @@
               <dd><a href="tel:+12272575005">227-257-5005</a></dd>
               <dt>Email</dt>
               <dd><a href="mailto:norm@dmxdigital.site">norm@dmxdigital.site</a></dd>
-              <dt>Keybase</dt>
+              <dt>
+                <svg aria-hidden="true" class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f2a400"><path d="M12.65 10C11.83 7.67 9.61 6 7 6a6 6 0 0 0 0 12c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h-1v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                <a href="https://keybase.io/" target="_blank" rel="noopener noreferrer">Keybase</a>
+              </dt>
               <dd><a href="https://keybase.io/dmxdigital" target="_blank" rel="noopener noreferrer">@dmxdigital</a></dd>
             </dl>
           </div>
@@ -137,7 +140,10 @@
         <div class="wrap letter">
           <div>
             <div class="section-kicker">Secure messaging</div>
-            <h2>Session</h2>
+            <div class="service-heading">
+              <svg aria-hidden="true" class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#00b364"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+              <h2><a href="https://getsession.org/" target="_blank" rel="noopener noreferrer">Session</a></h2>
+            </div>
             <p class="copy">Session is an encrypted, serverless messenger. No account required. Add me by scanning the QR code or copying the ID below.</p>
             <code class="session-id">05a4a9da2c31dc9ab7183d133dc5f58fb61d0c1507ab33d9d45c827e48075ff12c</code>
           </div>
@@ -157,7 +163,11 @@
           <div>
             <div class="section-kicker">PGP</div>
             <h2>Public key</h2>
-            <p class="copy">Key for <a href="mailto:norm@dmxdigital.site">norm@dmxdigital.site</a>.</p>
+            <p class="copy">Key for <a href="mailto:norm@dmxdigital.site">norm@dmxdigital.site</a>. Discover via WKD:</p>
+            <div class="cmd-wrap">
+              <code class="cmd-code">gpg --locate-key norm@dmxdigital.site</code>
+              <button class="copy-btn" type="button" data-copy="gpg --locate-key norm@dmxdigital.site">Copy</button>
+            </div>
             <div class="button-row">
               <a class="button" href="/assets/keys/norm-dmxdigital.asc" download="norm-dmxdigital.asc">Download .asc</a>
             </div>
@@ -215,6 +225,18 @@ xDNtvu83FKBAe6roIW/K3WGa1go=
         group.addEventListener("focusin", () => btn.setAttribute("aria-expanded", "true"));
         group.addEventListener("focusout", (e) => {
           if (!group.contains(e.relatedTarget)) btn.setAttribute("aria-expanded", "false");
+        });
+      });
+      document.querySelectorAll(".copy-btn").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          navigator.clipboard.writeText(btn.dataset.copy).then(function() {
+            btn.textContent = "Copied";
+            btn.classList.add("copied");
+            setTimeout(function() {
+              btn.textContent = "Copy";
+              btn.classList.remove("copied");
+            }, 1500);
+          });
         });
       });
     </script>

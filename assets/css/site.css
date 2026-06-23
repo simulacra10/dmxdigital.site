@@ -852,6 +852,9 @@ footer {
 .contact-dl { margin: 0; padding: 0; }
 
 .contact-dl dt {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.78rem;
   font-weight: 800;
@@ -862,6 +865,75 @@ footer {
 }
 
 .contact-dl dt:first-child { margin-top: 0; }
+
+.contact-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-dl dt a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-dl dt a:hover { color: var(--orange); }
+
+.service-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.service-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+}
+
+.service-heading h2 a {
+  color: var(--deep-purple);
+  text-decoration: none;
+}
+
+.service-heading h2 a:hover { color: var(--orange); }
+
+.cmd-wrap {
+  display: flex;
+  align-items: stretch;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  overflow: hidden;
+}
+
+.cmd-code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  padding: 0.7rem 1rem;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.72);
+  color: #45364f;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+}
+
+.copy-btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  background: var(--deep-purple);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.copy-btn:hover { background: var(--purple); }
+.copy-btn.copied { background: #3a7040; }
 
 .contact-dl dd {
   margin: 0;
