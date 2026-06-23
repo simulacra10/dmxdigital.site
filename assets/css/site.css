@@ -849,9 +849,63 @@ footer {
 
 /* ── Contact page ────────────────────────────────────────────── */
 
-.contact-dl { margin: 0; padding: 0; }
+.contact-hero {
+  padding: clamp(4rem, 10vw, 7rem) 0 clamp(3rem, 7vw, 5rem);
+}
 
-.contact-dl dt {
+.contact-hero h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 1.75rem;
+}
+
+.contact-email {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: -0.025em;
+  color: var(--deep-purple);
+  text-decoration: none;
+}
+
+.contact-phone {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.contact-email:hover,
+.contact-phone:hover { color: var(--orange); }
+
+.contact-note {
+  margin-top: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Encrypted channels list */
+
+.enc-list {
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.enc-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  padding: 1.65rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+
+.enc-service {
   display: flex;
   align-items: center;
   gap: 0.35rem;
@@ -861,10 +915,15 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--muted);
-  margin: 1.35rem 0 0.2rem;
+  padding-top: 0.15rem;
 }
 
-.contact-dl dt:first-child { margin-top: 0; }
+.enc-service a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.enc-service a:hover { color: var(--orange); }
 
 .contact-icon {
   width: 1rem;
@@ -872,31 +931,61 @@ footer {
   flex-shrink: 0;
 }
 
-.contact-dl dt a {
-  color: inherit;
-  text-decoration: none;
+.enc-value {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
 }
 
-.contact-dl dt a:hover { color: var(--orange); }
+/* Session QR + ID side by side */
 
-.service-heading {
+.session-pair {
   display: flex;
+  gap: 1.25rem;
   align-items: center;
-  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
-.service-icon {
-  width: 1.75rem;
-  height: 1.75rem;
+.session-qr {
+  width: 6.5rem;
+  height: auto;
   flex-shrink: 0;
+  padding: 0.35rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
 }
 
-.service-heading h2 a {
-  color: var(--deep-purple);
-  text-decoration: none;
+.session-id {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  word-break: break-all;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
-.service-heading h2 a:hover { color: var(--orange); }
+/* PGP row */
+
+.pgp-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 1.1rem;
+}
+
+.pgp-actions .cmd-wrap {
+  flex: 1;
+  min-width: 0;
+  margin-top: 0;
+}
+
+.pgp-actions .button {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Command block */
 
 .cmd-wrap {
   display: flex;
@@ -935,42 +1024,13 @@ footer {
 .copy-btn:hover { background: var(--purple); }
 .copy-btn.copied { background: #3a7040; }
 
-.contact-dl dd {
-  margin: 0;
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
-}
-
-.session-id {
-  display: block;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.78rem;
-  word-break: break-all;
-  color: var(--muted);
-  margin-top: 0.75rem;
-  line-height: 1.7;
-}
-
-.qr-wrap {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.qr-wrap img {
-  display: block;
-  width: min(13rem, 100%);
-  height: auto;
-  padding: 0.65rem;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 0.85rem;
-}
+/* PGP key details */
 
 details.pgp-details summary {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.88rem;
   color: var(--muted);
   cursor: pointer;
-  margin-top: 1.25rem;
   user-select: none;
 }
 
@@ -988,6 +1048,22 @@ details.pgp-details summary:hover { color: var(--deep-purple); }
   color: #45364f;
   margin: 0.65rem 0 0;
   white-space: pre;
+}
+
+@media (max-width: 760px) {
+  .enc-row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .pgp-actions {
+    flex-direction: column;
+  }
+
+  .pgp-actions .button {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* ── Article / blog post layout ─────────────────────────────── */

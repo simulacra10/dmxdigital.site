@@ -106,76 +106,64 @@
     </header>
     <main>
 
-      <section class="article-header">
+      <section class="contact-hero">
         <div class="wrap">
-          <p class="article-byline">Contact</p>
           <h1>Get in touch.</h1>
-          <p class="article-lede">Phone, email, or encrypted messenger. Use whichever fits.</p>
+          <div class="contact-direct">
+            <a href="mailto:norm@dmxdigital.site" class="contact-email">norm@dmxdigital.site</a>
+            <a href="tel:+12272575005" class="contact-phone">227-257-5005</a>
+          </div>
+          <p class="contact-note">Encrypted options below for conversations that should stay private.</p>
         </div>
       </section>
 
-      <section id="direct" class="compact-section">
-        <div class="wrap letter">
-          <div>
-            <div class="section-kicker">Direct lines</div>
-            <h2>Reach me</h2>
-          </div>
-          <div class="copy">
-            <dl class="contact-dl">
-              <dt>Phone</dt>
-              <dd><a href="tel:+12272575005">227-257-5005</a></dd>
-              <dt>Email</dt>
-              <dd><a href="mailto:norm@dmxdigital.site">norm@dmxdigital.site</a></dd>
-              <dt>
+      <section id="encrypted">
+        <div class="wrap">
+          <div class="section-kicker">Encrypted channels</div>
+          <div class="enc-list">
+
+            <div class="enc-row">
+              <div class="enc-service">
                 <svg aria-hidden="true" class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f2a400"><path d="M12.65 10C11.83 7.67 9.61 6 7 6a6 6 0 0 0 0 12c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h-1v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
                 <a href="https://keybase.io/" target="_blank" rel="noopener noreferrer">Keybase</a>
-              </dt>
-              <dd><a href="https://keybase.io/dmxdigital" target="_blank" rel="noopener noreferrer">@dmxdigital</a></dd>
-            </dl>
-          </div>
-        </div>
-      </section>
+              </div>
+              <div class="enc-value">
+                <a href="https://keybase.io/dmxdigital" target="_blank" rel="noopener noreferrer">@dmxdigital</a>
+              </div>
+            </div>
 
-      <section id="session" class="compact-section">
-        <div class="wrap letter">
-          <div>
-            <div class="section-kicker">Secure messaging</div>
-            <div class="service-heading">
-              <svg aria-hidden="true" class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#00b364"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
-              <h2><a href="https://getsession.org/" target="_blank" rel="noopener noreferrer">Session</a></h2>
+            <div class="enc-row">
+              <div class="enc-service">
+                <svg aria-hidden="true" class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#00b364"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                <a href="https://getsession.org/" target="_blank" rel="noopener noreferrer">Session</a>
+              </div>
+              <div class="enc-value">
+                <div class="session-pair">
+                  <img
+                    class="session-qr"
+                    src="/assets/img/session-qr.svg"
+                    alt="QR code for Session Messenger ID"
+                    width="112"
+                    height="112"
+                  />
+                  <code class="session-id">05a4a9da2c31dc9ab7183d133dc5f58fb61d0c1507ab33d9d45c827e48075ff12c</code>
+                </div>
+              </div>
             </div>
-            <p class="copy">Session is an encrypted, serverless messenger. No account required. Add me by scanning the QR code or copying the ID below.</p>
-            <code class="session-id">05a4a9da2c31dc9ab7183d133dc5f58fb61d0c1507ab33d9d45c827e48075ff12c</code>
-          </div>
-          <div class="qr-wrap">
-            <img
-              src="/assets/img/session-qr.svg"
-              alt="QR code for Session Messenger ID 05a4a9da2c31dc9ab7183d133dc5f58fb61d0c1507ab33d9d45c827e48075ff12c"
-              width="224"
-              height="224"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section id="pgp" class="compact-section">
-        <div class="wrap letter">
-          <div>
-            <div class="section-kicker">PGP</div>
-            <h2>Public key</h2>
-            <p class="copy">Key for <a href="mailto:norm@dmxdigital.site">norm@dmxdigital.site</a>. Discover via WKD:</p>
-            <div class="cmd-wrap">
-              <code class="cmd-code">gpg --locate-key norm@dmxdigital.site</code>
-              <button class="copy-btn" type="button" data-copy="gpg --locate-key norm@dmxdigital.site">Copy</button>
-            </div>
-            <div class="button-row">
-              <a class="button" href="/assets/keys/norm-dmxdigital.asc" download="norm-dmxdigital.asc">Download .asc</a>
-            </div>
-          </div>
-          <div>
-            <details class="pgp-details">
-              <summary>View public key</summary>
-              <pre class="pgp-block">-----BEGIN PGP PUBLIC KEY BLOCK-----
+            <div class="enc-row">
+              <div class="enc-service">PGP</div>
+              <div class="enc-value">
+                <div class="pgp-actions">
+                  <div class="cmd-wrap">
+                    <code class="cmd-code">gpg --locate-key norm@dmxdigital.site</code>
+                    <button class="copy-btn" type="button" data-copy="gpg --locate-key norm@dmxdigital.site">Copy</button>
+                  </div>
+                  <a class="button secondary light" href="/assets/keys/norm-dmxdigital.asc" download="norm-dmxdigital.asc">Download .asc</a>
+                </div>
+                <details class="pgp-details">
+                  <summary>View public key</summary>
+                  <pre class="pgp-block">-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xjMEajnYYRYJKwYBBAHaRw8BAQdA7cDrk5LlOeYXuXMG7cGSdpVgML8nvbvd
 WoabBquIPu7NK25vcm1AZG14ZGlnaXRhbC5zaXRlIDxub3JtQGRteGRpZ2l0
@@ -192,7 +180,10 @@ c2CBbhrV3txnII48ApsMFiEEzGTdRvxyS8Dzxm1LrpHG88aiVYMAAExVAP9s
 xDNtvu83FKBAe6roIW/K3WGa1go=
 =mViA
 -----END PGP PUBLIC KEY BLOCK-----</pre>
-            </details>
+                </details>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
