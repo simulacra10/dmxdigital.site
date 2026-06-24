@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Well-Known Resources | DMX Digital</title>
+    <meta
+      name="description"
+      content="Machine-readable resources published at /.well-known/ on dmxdigital.site — identity verification, PGP key discovery, API catalog, and agent metadata."
+    />
+    <meta name="author" content="Norman Bauer, DBA DMX Digital" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://dmxdigital.site/.well-known/" />
+    <meta property="og:title" content="Well-Known Resources | DMX Digital" />
+    <meta
+      property="og:description"
+      content="Machine-readable resources published at /.well-known/ on dmxdigital.site — identity verification, PGP key discovery, API catalog, and agent metadata."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dmxdigital.site/.well-known/" />
+    <meta
+      property="og:logo"
+      content="https://dmxdigital.site/assets/img/dmx-digital-logo.png"
+    />
+    <meta property="og:site_name" content="DMX Digital" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://dmxdigital.site/assets/img/og-image.png"
+    />
+    <meta property="og:image:alt" content="DMX Digital logo and brand message" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Well-Known Resources | DMX Digital" />
+    <meta
+      name="twitter:description"
+      content="Machine-readable resources published at /.well-known/ on dmxdigital.site — identity verification, PGP key discovery, API catalog, and agent metadata."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dmxdigital.site/assets/img/og-image.png"
+    />
+    <meta name="twitter:image:alt" content="DMX Digital logo and brand message" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
+    <meta name="theme-color" content="#2b123f" />
+    <link rel="stylesheet" href="/assets/css/site.min.css?v=20260623-nav-fix" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="DMX Digital home"
+          ><img src="/assets/img/dmx-digital-logo.png" alt="DMX Digital" /></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span></span> <span></span> <span></span>
+        </button>
+        <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Work</button>
+            <ul class="nav-group-menu">
+              <li><a href="/#starter">Starter Website</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="https://speed.dmxdigital.site" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">About</button>
+            <ul class="nav-group-menu">
+              <li><a href="/about/">About</a></li>
+              <li><a href="https://youtu.be/hXIeKjRG4XQ" target="_blank" rel="noopener noreferrer">Video Introduction</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Writing</button>
+            <ul class="nav-group-menu">
+              <li><a href="/built-to-be-found-built-to-be-defended/">Built to Be Found</a></li>
+              <li><a href="/dmx.txt">Plain Text</a></li>
+            </ul>
+          </div>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+      <section class="contact-hero">
+        <div class="wrap">
+          <h1>/.well-known/</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap letter">
+          <div>
+            <div class="section-kicker">Directory</div>
+            <h2>Machine-readable resources published by this site.</h2>
+          </div>
+          <div class="copy">
+            <p>The <code>/.well-known/</code> path is a standard location for machine-readable metadata files (<a href="https://www.rfc-editor.org/rfc/rfc8615" target="_blank" rel="noopener noreferrer">RFC 8615</a>). If you ended up here by accident, the rest of the site is at <a href="/">dmxdigital.site</a>.</p>
+
+            <dl class="wellknown-list">
+              <dt><a href="/assets/keys/norm-dmxdigital.asc">/assets/keys/norm-dmxdigital.asc</a></dt>
+              <dd>PGP public key for norm@dmxdigital.site. Also available via <code>gpg --locate-key norm@dmxdigital.site</code>.</dd>
+
+              <dt><a href="/.well-known/openpgpkey/policy">openpgpkey/policy</a></dt>
+              <dd>Web Key Directory (WKD) policy file. Enables automatic PGP key discovery by mail clients and GPG.</dd>
+
+              <dt><a href="/.well-known/keybase.txt">keybase.txt</a></dt>
+              <dd>Keybase identity proof linking this domain to <a href="https://keybase.io/dmxdigital" target="_blank" rel="noopener noreferrer">keybase.io/dmxdigital</a>.</dd>
+
+              <dt><a href="/.well-known/api-catalog">api-catalog</a></dt>
+              <dd>RFC 9727 API catalog. A machine-readable index of the public resources this site exposes.</dd>
+
+              <dt><a href="/.well-known/oauth-authorization-server">oauth-authorization-server</a></dt>
+              <dd>OAuth 2.0 authorization server metadata (RFC 8414). Declares anonymous public access — no credentials required.</dd>
+
+              <dt><a href="/.well-known/oauth-protected-resource">oauth-protected-resource</a></dt>
+              <dd>OAuth 2.0 protected resource metadata (RFC 9728).</dd>
+
+              <dt><a href="/.well-known/mcp/server-card.json">mcp/server-card.json</a></dt>
+              <dd>MCP Server Card (SEP-1649). Describes available tools for AI agents using the Model Context Protocol.</dd>
+
+              <dt><a href="/.well-known/agent-skills/index.json">agent-skills/index.json</a></dt>
+              <dd>Agent Skills Discovery index. Lists skills this site advertises to compatible AI agents.</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="wrap">
+        <p>DMX Digital. DelMarVa Xcellence in plain, durable web design.</p>
+        <p>&copy; 2026 DMX Digital. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle"),
+        primaryMenu = document.querySelector("#primary-menu");
+      menuToggle.addEventListener("click", () => {
+        const e = "true" === menuToggle.getAttribute("aria-expanded");
+        menuToggle.setAttribute("aria-expanded", String(!e));
+        primaryMenu.classList.toggle("is-open");
+      });
+      primaryMenu.querySelectorAll("a").forEach((e) => {
+        e.addEventListener("click", () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          primaryMenu.classList.remove("is-open");
+        });
+      });
+      primaryMenu.querySelectorAll(".nav-group").forEach((group) => {
+        const btn = group.querySelector(".nav-group-btn");
+        group.addEventListener("mouseenter", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("mouseleave", () => btn.setAttribute("aria-expanded", "false"));
+        group.addEventListener("focusin", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("focusout", (e) => {
+          if (!group.contains(e.relatedTarget)) btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1168,3 +1168,25 @@ article.prose em {
   color: var(--muted);
   line-height: 1.45;
 }
+
+/* /.well-known/ index page */
+.wellknown-list {
+  margin: 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.wellknown-list dt {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--deep-purple);
+}
+
+.wellknown-list dd {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.6;
+}

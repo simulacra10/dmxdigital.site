@@ -49,6 +49,10 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://dmxdigital.site/.well-known/</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://dmxdigital.site/ai.txt</loc>
     <priority>0.3</priority>
   </url>
