@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dmxdigital.site/about/">
   <meta property="og:title" content="About Norman Bauer | DMX Digital">
-  <meta property="og:description" content="Systems thinker. Former local business owner. I build websites that listen before they talk.">
+  <meta property="og:description" content="Systems thinker. Former local business owner. I build plain, durable websites for small businesses on the Eastern Shore of Maryland.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmxdigital.site/about/">
   <meta property="og:site_name" content="DMX Digital">
@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Norman Bauer | DMX Digital">
-  <meta name="twitter:description" content="Systems thinker. Former local business owner. I build websites that listen before they talk.">
+  <meta name="twitter:description" content="Systems thinker. Former local business owner. I build plain, durable websites for small businesses on the Eastern Shore of Maryland.">
   <meta name="twitter:image" content="https://dmxdigital.site/assets/img/og-image.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,13 +35,30 @@
       <a class="brand" href="/" aria-label="DMX Digital home"><img src="/assets/img/dmx-digital-logo.png" alt="DMX Digital"></a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu"><span></span> <span></span> <span></span></button>
       <nav id="primary-menu" class="nav-links" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="/starter-website-package/">Starter Website</a>
-        <a href="/about/">About</a>
-        <a href="/projects/">Projects</a>
-        <a href="/about.txt">Plain Text</a>
-        <a href="/#contact">Contact</a>
-      </nav>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Work</button>
+            <ul class="nav-group-menu">
+              <li><a href="/#starter">Starter Website</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="https://speed.dmxdigital.site" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">About</button>
+            <ul class="nav-group-menu">
+              <li><a href="/about/" aria-current="page">About</a></li>
+              <li><a href="https://youtu.be/hXIeKjRG4XQ" target="_blank" rel="noopener noreferrer">Video Introduction</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">Writing</button>
+            <ul class="nav-group-menu">
+              <li><a href="/built-to-be-found-built-to-be-defended/">Built to Be Found</a></li>
+              <li><a href="/dmx.txt">Plain Text</a></li>
+            </ul>
+          </div>
+          <a href="/contact/">Contact</a>
+        </nav>
     </div>
   </header>
 
@@ -140,6 +157,29 @@
     </div>
   </footer>
 
-  <script>const menuToggle=document.querySelector(".menu-toggle"),primaryMenu=document.querySelector("#primary-menu");menuToggle.addEventListener("click",()=>{const e="true"===menuToggle.getAttribute("aria-expanded");menuToggle.setAttribute("aria-expanded",String(!e)),primaryMenu.classList.toggle("is-open")}),primaryMenu.querySelectorAll("a").forEach(e=>{e.addEventListener("click",()=>{menuToggle.setAttribute("aria-expanded","false"),primaryMenu.classList.remove("is-open")})})</script>
+  <script>
+      const menuToggle = document.querySelector(".menu-toggle"),
+        primaryMenu = document.querySelector("#primary-menu");
+      menuToggle.addEventListener("click", () => {
+        const e = "true" === menuToggle.getAttribute("aria-expanded");
+        menuToggle.setAttribute("aria-expanded", String(!e));
+        primaryMenu.classList.toggle("is-open");
+      });
+      primaryMenu.querySelectorAll("a").forEach((e) => {
+        e.addEventListener("click", () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          primaryMenu.classList.remove("is-open");
+        });
+      });
+      primaryMenu.querySelectorAll(".nav-group").forEach((group) => {
+        const btn = group.querySelector(".nav-group-btn");
+        group.addEventListener("mouseenter", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("mouseleave", () => btn.setAttribute("aria-expanded", "false"));
+        group.addEventListener("focusin", () => btn.setAttribute("aria-expanded", "true"));
+        group.addEventListener("focusout", (e) => {
+          if (!group.contains(e.relatedTarget)) btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
 </body>
 </html>
