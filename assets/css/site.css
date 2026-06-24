@@ -875,6 +875,13 @@ footer {
 .contact-email:hover,
 .contact-phone:hover { color: var(--orange); }
 
+.contact-note {
+  margin-top: 0.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 /* Encrypted channels list */
 
 .enc-list {
