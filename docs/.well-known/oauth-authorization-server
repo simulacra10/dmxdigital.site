@@ -1,8 +1,0 @@
-{
-  "issuer": "https://dmxdigital.site",
-  "agent_auth": {
-    "skill": "https://dmxdigital.site/auth.md",
-    "register_uri": "https://dmxdigital.site/auth.md",
-    "identity_types_supported": ["anonymous"]
-  }
-}

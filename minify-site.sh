@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# DMX Digital static-site publisher
-#
-# Builds a minified copy of the site into ./public.
-# The source directory remains untouched, similar to a Hugo-style workflow.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-SRC_DIR="."
-PUBLIC_DIR="docs"
+SRC_DIR="$SCRIPT_DIR/wip"
+PUBLIC_DIR="$SCRIPT_DIR/docs"
 
 CSS_IN="assets/css/site.css"
 CSS_MIN="assets/css/site.min.css"
@@ -32,20 +29,14 @@ rm -rf "$PUBLIC_DIR"
 mkdir -p "$PUBLIC_DIR"
 
 echo "Copying site files into ${PUBLIC_DIR}/ ..."
-
-# Copy everything except build/output/dev/VCS files.
-# This keeps the source tree untouched and produces a deployable public folder.
 rsync -a \
-  --exclude "$PUBLIC_DIR/" \
-  --exclude ".git/" \
-  --exclude ".github/" \
-  --exclude ".gitignore" \
   --exclude "*.bak" \
   --exclude "*.patch" \
   --exclude "*.zip" \
   --exclude ".DS_Store" \
   --exclude "node_modules/" \
   "$SRC_DIR"/ "$PUBLIC_DIR"/
+
 
 echo "Minifying CSS ..."
 if [[ -f "$PUBLIC_DIR/$CSS_IN" ]]; then
@@ -66,7 +57,6 @@ while IFS= read -r -d '' html_file; do
     --minify-js true \
     -o "$html_file"
 
-  # Make published HTML use the minified stylesheet.
   sed -i 's|assets/css/site.css|assets/css/site.min.css|g' "$html_file"
   sed -i 's|/assets/css/site.css|/assets/css/site.min.css|g' "$html_file"
 done < <(find "$PUBLIC_DIR" -type f -name "*.html" -print0)
@@ -77,10 +67,10 @@ if [[ -f "$PUBLIC_DIR/$CSS_MIN" && -f "$PUBLIC_DIR/$CSS_IN" ]]; then
 fi
 
 echo "Syncing minified CSS back to source tree ..."
-cp "$PUBLIC_DIR/$CSS_MIN" "$CSS_MIN"
+cp "$PUBLIC_DIR/$CSS_MIN" "$SRC_DIR/$CSS_MIN"
 
 echo "Done."
 echo "Published minified site to: $PUBLIC_DIR/"
 echo
 echo "Preview locally with:"
-echo "  python3 -m http.server 8000 -d public"
+echo "  python3 -m http.server 8000 -d $PUBLIC_DIR"
